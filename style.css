@@ -31,9 +31,9 @@ body {
     background: linear-gradient(#72e01d 0%, #1579eb 100%);
     display: table-cell;
     width: 100%;
-    height: 120%;
+    height: 100%;
     z-index: 9;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 h1 {
@@ -84,54 +84,34 @@ p {
     position: relative;
     text-align: center;
 }
-.menu {
-    z-index: 10;
-    list-style: none;
-    position: fixed;
-    top: 10px;
-    right: 30px;
-    cursor: pointer;
-}
-
-.links {
-    float: left;
-    color: purple;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 9px;
-    padding-left: 9px;
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-}
-
-.links:hover {
-    background-color: chartreuse;
-    text-decoration: underline #00d6e6;
-}
 
 .menu {
     z-index: 10;
     list-style: none;
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 0;
+    margin-top: 0px;
     cursor: pointer;
+    width: 100%;
+    background-color: white;
+    height: 60px;
 }
 
-.links {
-    float: left;
+.links a {
     color: purple;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 9px;
-    padding-left: 9px;
+    padding-right: 0px;
+    padding-left: 370px;
     font-family: 'Lobster', cursive;
     font-size: 30px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;   
 }
 
-.links:hover {
-    background-color: chartreuse;
+.links a:hover {
+    font-size: 35px;
     text-decoration: underline #00d6e6;
+    background-color: none;
 }
 
 ul {
@@ -155,18 +135,191 @@ li {
 }
 
 /* Change the link color to #111 (black) on hover */
-li:hover {
-    background-color: #111;
-}
-
 .active {
     background-color: #4CAF50;
 }
 
 li {
-  border-right: 1px solid #bbb;
+    border-right: 1px solid #bbb;
 }
 
 li:last-child {
-  border-right: none;
+    border-right: none;
+}
+
+.article {
+    color: purple;
+    font-family: cursive;
+    font-size: 25px;
+    text-decoration: underline #000000;
+}
+
+.article:hover {
+    text-decoration: underline #ffc3e6;
+    background-color: aqua;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#heading_apps {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: cursive;
+    padding-top: 30px;
+}
+
+iframe {
+    border: solid #000000;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lobster' cursive;
+}
+
+/* The subnavigation menu */
+.subnav {
+    float: left
+    overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .links1 {
+    float: left;
+    color: purple;
+    padding-top: 14px;
+    padding-bottom: 5px;
+    padding-right: 9px;
+    padding-left: 9px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .links1 {
+    background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.links2 {
+    color: purple;
+    padding-right: 25px;
+    padding-left: 33px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    display: inline;
+}
+
+#location iframe {
+    width: 100%;
+    border: solid #000000;
+    border-width : 4px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#contact_1 h3{
+    display: inline;
+}
+
+#contact_1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#contact {
+    background-color: orangered;
+}
+
+.links4 a {
+    color: purple;
+    padding-right: 0px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links5 a {
+    color: purple;
+    padding-right: 0px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links6 a {
+    color: purple;
+    padding-right: 0px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links4 a:hover {
+    font-size: 35px;
+    text-decoration: underline #00d6e6;
+    background-color: none;
+}
+
+.links5 a:hover {
+    font-size: 35px;
+    text-decoration: underline #00d6e6;
+    background-color: none;
+}
+
+.links6 a:hover {
+    font-size: 35px;
+    text-decoration: underline #00d6e6;
+    background-color: none;
 }
