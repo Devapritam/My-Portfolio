@@ -13,22 +13,28 @@
 </head>
 
 <body>
-        <center>
-            <ul class="menu">
-                <li class="links"><a href="#Bio">Home</a></li>
-                <li class="links4"><a href = "#My_videos">My Videos</a></li>
-                <div class = "subnav">
-                    <li class="links1">Works</li>
-                    <div class = "subnav-content">
-                        <li class = "links2"><a href="#apps">My Apps</a></li>
-                        <li class = "links2"><a href="#games">My Games</a></li>
-                        <li class = "links2"><a href="#chatbots">My Chatbots</a></li>
-                    </div>
-                </div>    
-                <li class="links5"><a href="#writings">Writings</a></li>
-                <li class="links6"><a href = "#contact">Contact</a></li>
-            </ul>
-        </center>
+<nav class=" navbar navbar-inverse" style="position: sticky;top: 0;z-index: 10">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#welcome">Devapritam Sharma</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#Bio">About</a></li>
+            <li><a href="#My_videos">Videos</a></li>
+            <li><a href="#Works">Works</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#writings">Writings</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
         <section id='welcome'>
             <img class="profile" src="20190203_111306%20(2).jpg">
@@ -185,16 +191,29 @@
             <h2 id = "heading_apps">Contact Me At</h2>
             <div class = "parallax-inner"></div>
             <br>
-            <div id = "contact_1">
-                <a href="mailto:devapritamsharma@gmail.com?Subject=Hello">
-                    <i class ="fa fa-envelope"></i>&nbsp;&nbsp;<h3>devapritamsharma@gmail.com</h3>
-                </a>
-                <br>
-                <br>
-                <a href="Tel: +91 98631-41002">
-                    <i class="fa fa-phone"></i>&nbsp;&nbsp;<h3>+91 98631-41002</h3>
-                </a>
-            </div>
+            <div class="contact_1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+           <a href="mailto:my@gmail.com?Subject=Hi">
+               <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+            </a> 
+
+           <a href="#"> 
+               <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a> 
+        </div>
+    
+    <div class="contact_2 clo-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <form>
+            <span>Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <input type="text" name="name" placeholder="Enter your name.."required>
+            <br>
+            <br>
+            <span>Comment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <textarea name="comment" placeholder="Enter your message.." required></textarea>
+            <br>
+            <br>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
         <br>
         <br>
         <br>
